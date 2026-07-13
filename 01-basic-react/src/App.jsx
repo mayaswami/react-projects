@@ -5,8 +5,7 @@
 // import Counter from './components/Counter.jsx';
 // import Toggle from "./components/Toggle.jsx";
 // import ControlledComponent from "./components/ControlledCom01.jsx";
-import Form from "./components/ControlledCom02.jsx";
-
+import CheckBox from "./components/CheckBoxes.jsx";
 // const products = [
 //   {
 //     id: 1,
@@ -44,7 +43,8 @@ function App() {
       {/* <Toggle />  */}
       {/* <Counter /> */}
       {/* <ControlledComponent /> */}
-      <Form />
+      {/* <Form /> */}
+      <CheckBox />
       
       {/* <h1>Products</h1>
 
