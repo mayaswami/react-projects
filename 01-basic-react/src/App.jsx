@@ -1,13 +1,11 @@
-{
-  /*import ProductCard1 from './components/ProductCard01.jsx' */
-}
+//*import ProductCard1 from './components/ProductCard01.jsx' */
 // import ProductCard2 from "./components/ProductsCard02.jsx";
 // import Counter from './components/Counter.jsx';
 // import Toggle from "./components/Toggle.jsx";
 // import ControlledComponent from "./components/ControlledCom01.jsx";
 // import CheckBox from "./components/CheckBoxes.jsx";
-import CounterOne from "./components/UseEffect";
-
+// import CounterOne from "./components/UseEffect";
+import FetchApi from "./components/FetchApi";
 // const products = [
 //   {
 //     id: 1,
@@ -47,7 +45,8 @@ function App() {
       {/* <ControlledComponent /> */}
       {/* <Form /> */}
       {/* <CheckBox /> */}
-      <CounterOne />
+      {/* <CounterOne /> */}
+      <FetchApi />
       {/* <h1>Products</h1>
 
       {products.map((product) => (

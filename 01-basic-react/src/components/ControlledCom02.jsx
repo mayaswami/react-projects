@@ -33,7 +33,7 @@ function Form() {
         <input
           type="text"
           name="name"
-          placeholder="Enter Your Fucking Name"
+          placeholder="Enter Your Name"
           value={formData.name}
           onChange={handleChange}
         />
@@ -42,7 +42,7 @@ function Form() {
         <input
           type="password"
           name="password"
-          placeholder="Enter ur Fucking Password"
+          placeholder="Enter Your Password"
           value={formData.password}
           onChange={handleChange}
         />
@@ -51,7 +51,7 @@ function Form() {
         <input
           type="email"
           name="email"
-          placeholder="Enter Your Fucking Email"
+          placeholder="Enter Your Email"
           value={formData.email}
           onChange={handleChange}
         />
