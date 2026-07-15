@@ -5,7 +5,11 @@
 // import ControlledComponent from "./components/ControlledCom01.jsx";
 // import CheckBox from "./components/CheckBoxes.jsx";
 // import CounterOne from "./components/UseEffect";
-import FetchApi from "./components/FetchApi";
+// import FetchApi from "./components/FetchApi";
+
+import Radio from "./components/RadioBtn";
+
+
 // const products = [
 //   {
 //     id: 1,
@@ -46,9 +50,11 @@ function App() {
       {/* <Form /> */}
       {/* <CheckBox /> */}
       {/* <CounterOne /> */}
-      <FetchApi />
-      {/* <h1>Products</h1>
+      {/* <FetchApi /> */}
+      <Radio />
 
+
+      {/* <h1>Products</h1>
       {products.map((product) => (
         <ProductCard2 
         key={product.id} 
