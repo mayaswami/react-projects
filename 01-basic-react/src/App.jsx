@@ -6,8 +6,8 @@
 // import CheckBox from "./components/CheckBoxes.jsx";
 // import CounterOne from "./components/UseEffect";
 // import FetchApi from "./components/FetchApi";
-
-import Radio from "./components/RadioBtn";
+// import Radio from "./components/RadioBtn";
+import CollegeList from "./components/CollegeList";
 
 
 // const products = [
@@ -51,8 +51,8 @@ function App() {
       {/* <CheckBox /> */}
       {/* <CounterOne /> */}
       {/* <FetchApi /> */}
-      <Radio />
-
+      {/* <Radio /> */}
+      <CollegeList />
 
       {/* <h1>Products</h1>
       {products.map((product) => (
