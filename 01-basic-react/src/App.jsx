@@ -45,7 +45,7 @@ function App() {
   const sampleProduct1 = {
     image: "https://one8.com/cdn/shop/files/V10032402_03_3e786937-e032-4daf-a435-4573e19db93b.jpg?v=1781859672&width=2002",
     name: "One Eight Sneakers",
-    price: "9230/-",
+    price: 9230,
     description: "Comfortable and stylish sneakers perfect for everyday wear and casual sports.",
   };
 
@@ -53,7 +53,7 @@ function App() {
     image:
       "https://5.imimg.com/data5/ECOM/Default/2023/12/366885888/UC/NA/GQ/203539192/gr-f75da371-67fe-4dca-a670-c0bbb7eb0dbd-30284209-origin80prcnt-500x500.jpg",
     name: "One Eight Hoodie",
-    price: "4999/-",
+    price: 4999,
     description:
       "Soft and cozy hoodie ideal for layering and relaxed weekend outfits.",
   };
@@ -62,7 +62,7 @@ function App() {
     image:
       "https://one8.com/cdn/shop/files/1_d75924d1-ef51-4b62-b8e6-d4ad2c68c1d0.jpg?v=1783341393&width=1500",
     name: "One Eight Cap",
-    price: "1299/-",
+    price: 1299,
     description:
       "Lightweight cap with breathable fabric and a modern sporty look.",
   };
@@ -83,31 +83,31 @@ function App() {
       {/* <Radio /> */}
       {/* <CollegeList /> */}
 
+      {/* ************ ProductCard03.jsx ************* */}
+
       <div
-        style={{ backgroundColor: "black", display: "flex", justifyContent: "center", padding: "40px" }}
+        style={{
+          backgroundColor: "#e3d9d9",
+          display: "flex",
+          justifyContent: "center",
+          padding: "40px",
+        }}
       >
         <ProductCard
-          image={sampleProduct1.image}
-          name={sampleProduct1.name}
-          price={sampleProduct1.price}
-          description={sampleProduct1.description}
+          {...sampleProduct1}
           onAddToCart={() => handleAddToCart(sampleProduct1.name)}
         />
         <ProductCard
-          image={sampleProduct2.image}
-          name={sampleProduct2.name}
-          price={sampleProduct2.price}
-          description={sampleProduct2.description}
+          {...sampleProduct2}
           onAddToCart={() => handleAddToCart(sampleProduct2.name)}
         />
         <ProductCard
-          image={sampleProduct3.image}
-          name={sampleProduct3.name}
-          price={sampleProduct3.price}
-          description={sampleProduct3.description}
+          {...sampleProduct3}
           onAddToCart={() => handleAddToCart(sampleProduct3.name)}
         />
       </div>
+
+      {/* ************ ProductCard03.jsx ************* */}
 
       {/* <h1>Products</h1>
       {products.map((product) => (

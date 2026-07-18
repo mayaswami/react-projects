@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./ProductCard03.css";
+
+const colors = ["black", "darkred", "navy"];
 
 function ProductCard({
   image,
@@ -9,8 +11,8 @@ function ProductCard({
   category = "trending",
   onAddToCart,
 }) {
-  const [selectedColor, setSelectedColor] = useState("black");
-  const colors = ["black", "darkred", "navy"];
+
+  const [selectedColor, setSelectedColor] = useState("black"); 
 
   return (
     <div className="product-card">
@@ -22,7 +24,7 @@ function ProductCard({
       <div className="product-info">
         <div className="product-header">
           <h3 className="product-name">{name}</h3>
-          <span className="product-price">₹{price}</span>
+          <span className="product-price">₹{price}/-</span>
         </div>
 
         <p className="product-description">{description}</p>
@@ -42,7 +44,7 @@ function ProductCard({
           </div>
         </div>
 
-        <button className="add-to-cart-btn" onClick={onAddToCart}>
+        <button type="button" className="add-to-cart-btn" onClick={onAddToCart}>
           Add to Cart
           <svg
             width="16"
