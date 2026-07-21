@@ -8,8 +8,8 @@
 // import FetchApi from "./components/FetchApi";
 // import Radio from "./components/RadioBtn";
 // import CollegeList from "./components/CollegeList";
-// import ProductCard from "./components/ProductCard03";
-import SignUpForm from "./components/SignUpForm";
+import ProductCard from "./components/ProductCard03";
+// import SignUpForm from "./components/SignUpForm";
 
 // const products = [
 //   {
@@ -43,34 +43,39 @@ import SignUpForm from "./components/SignUpForm";
 // ];
 
 function App() {
-  // const sampleProduct1 = {
-  //   image: "https://one8.com/cdn/shop/files/V10032402_03_3e786937-e032-4daf-a435-4573e19db93b.jpg?v=1781859672&width=2002",
-  //   name: "One Eight Sneakers",
-  //   price: 9230,
-  //   description: "Comfortable and stylish sneakers perfect for everyday wear and casual sports.",
-  // };
+  const sampleProducts = [
+    {
+      id: 1,
+      image:
+        "https://one8.com/cdn/shop/files/V10032402_03_3e786937-e032-4daf-a435-4573e19db93b.jpg?v=1781859672&width=2002",
+      name: "One Eight Sneakers",
+      price: 9230,
+      description:
+        "Comfortable and stylish sneakers perfect for everyday wear and casual sports.",
+    },
+    {
+      id: 2,
+      image:
+        "https://5.imimg.com/data5/ECOM/Default/2023/12/366885888/UC/NA/GQ/203539192/gr-f75da371-67fe-4dca-a670-c0bbb7eb0dbd-30284209-origin80prcnt-500x500.jpg",
+      name: "One Eight Hoodie",
+      price: 4999,
+      description:
+        "Soft and cozy hoodie ideal for layering and relaxed weekend outfits.",
+    },
+    {
+      id: 3,
+      image:
+        "https://one8.com/cdn/shop/files/1_d75924d1-ef51-4b62-b8e6-d4ad2c68c1d0.jpg?v=1783341393&width=1500",
+      name: "One Eight Cap",
+      price: 1299,
+      description:
+        "Lightweight cap with breathable fabric and a modern sporty look.",
+    },
+  ];
 
-  // const sampleProduct2 = {
-  //   image:
-  //     "https://5.imimg.com/data5/ECOM/Default/2023/12/366885888/UC/NA/GQ/203539192/gr-f75da371-67fe-4dca-a670-c0bbb7eb0dbd-30284209-origin80prcnt-500x500.jpg",
-  //   name: "One Eight Hoodie",
-  //   price: 4999,
-  //   description:
-  //     "Soft and cozy hoodie ideal for layering and relaxed weekend outfits.",
-  // };
-
-  // const sampleProduct3 = {
-  //   image:
-  //     "https://one8.com/cdn/shop/files/1_d75924d1-ef51-4b62-b8e6-d4ad2c68c1d0.jpg?v=1783341393&width=1500",
-  //   name: "One Eight Cap",
-  //   price: 1299,
-  //   description:
-  //     "Lightweight cap with breathable fabric and a modern sporty look.",
-  // };
-
-  // const handleAddToCart = (productName) => {
-  //   alert(`${productName} added to your cart!`);
-  // };
+  const handleAddToCart = (productName) => {
+    alert(`${productName} added to your cart!`);
+  };
 
   return (
     <>
@@ -82,12 +87,12 @@ function App() {
       {/* <CounterOne /> */}
       {/* <FetchApi /> */}
       {/* <Radio /> */}
-      {/* <CollegeList /> */}    
-      <SignUpForm />      
+      {/* <CollegeList /> */}
+      {/* <SignUpForm /> */}
 
       {/* ************ ProductCard03.jsx ************* */}
 
-      {/* <div
+      <div
         style={{
           backgroundColor: "#e3d9d9",
           display: "flex",
@@ -95,19 +100,16 @@ function App() {
           padding: "40px",
         }}
       >
+      {sampleProducts.map((product) => (
         <ProductCard
-          {...sampleProduct1}
-          onAddToCart={() => handleAddToCart(sampleProduct1.name)}
+          key={product.id}
+          {...product}
+          onAddToCart={() => handleAddToCart(product.name)}
         />
-        <ProductCard
-          {...sampleProduct2}
-          onAddToCart={() => handleAddToCart(sampleProduct2.name)}
-        />
-        <ProductCard
-          {...sampleProduct3}
-          onAddToCart={() => handleAddToCart(sampleProduct3.name)}
-        />
-      </div> */}
+      ))}
+        
+        
+      </div>
 
       {/* ************ ProductCard03.jsx ************* */}
 
