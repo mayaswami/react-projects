@@ -1,16 +1,64 @@
-# React + Vite
+# 01 - Basic React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This project contains my React fundamentals practice while learning React from scratch.
+> This repository is part of my Frontend Development learning journey.
+> Each folder represents a separate React topic and contains focused practice code.
 
-Currently, two official plugins are available:
+## Topics Covered
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- JSX
+- Functional Components
+- Props
+- Component Composition
+- useState
+- Event Handling
+- Conditional Rendering
+- Lists & map()
+- Forms (Controlled Components)
+- Multiple Input Handling
+- Checkbox & Radio Inputs
+- useEffect
+- Fetch API
+- Basic Component Styling
 
-## React Compiler
+## Components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ProductCard01
+- ProductCard03
+- ProductsCard02
+- Counter
+- Toggle
+- ControlledCom01
+- ControlledCom02
+- CheckBoxes
+- RadioBtn
+- CollegeCard
+- CollegeList
+- FetchApi
+- UseEffect
+- SignUpForm
 
-## Expanding the Oxlint configuration
+## Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+This project is only for learning and practicing React fundamentals.
+Each component focuses on a specific React concept.
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+## Learning Outcome
+
+After completing this project, I gained practical experience with:
+
+- Building reusable components
+- Managing component state
+- Passing data using props
+- Handling user events
+- Rendering dynamic lists
+- Working with forms
+- Fetching API data using useEffect
+- Organizing React components
