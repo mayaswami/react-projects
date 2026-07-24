@@ -1,0 +1,26 @@
+.dashboard {
+  padding: 20px;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.dashboard h1 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.dashboard-layout {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.dashboard-content {
+  flex: 1;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}

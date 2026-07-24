@@ -11,18 +11,23 @@ This project contains my practice while learning React Router.
 - ✅ BrowserRouter
 - ✅ Routes
 - ✅ Route
+- ✅ Link
 - ✅ NavLink
+- ✅ Active Link Styling
 - ✅ Basic Navigation
 - ✅ 404 Not Found Page
-- ✅ Navbar Component
+- ✅ Nested Routes
+- ✅ Outlet
+- ✅ Dashboard Layout
+- ✅ Sidebar Navigation
+- ✅ Index Route
 
 ## Topics Remaining
 
-- ⏳ Nested Routes
-- ⏳ Outlet
 - ⏳ useNavigate
 - ⏳ useParams
 - ⏳ Dynamic Routes
+- ⏳ Search Params
 - ⏳ Protected Routes
 
 ## Tech Stack

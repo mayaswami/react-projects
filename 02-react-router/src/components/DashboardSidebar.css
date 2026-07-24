@@ -1,0 +1,24 @@
+.sidebar {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #f7c2df;
+}
+
+.sidebar .active {
+  background-color: hotpink;
+  color: white;
+  font-weight: bold;
+}
