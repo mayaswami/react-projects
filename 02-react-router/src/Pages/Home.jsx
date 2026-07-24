@@ -1,10 +1,11 @@
 function Home() {
-    return(
-        <>
-        <h1>Home Page</h1>
-        <p>Welcome to the home page</p>
-        </>        
-    )
+  return (
+    <div className="page-content">
+      <h1>Home Page</h1>
+      <p>Welcome to the home page</p>
+    </div>
+  );
 }
+
 export default Home;
  
