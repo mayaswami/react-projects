@@ -1,0 +1,144 @@
+/* Products page styles (Products.jsx) */
+.page {
+  padding: 30px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-card h3 {
+  margin-bottom: 8px;
+}
+
+.product-price {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.view-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #3730a3;
+}
+
+/* ProductDetails page styles (ProductDetails.jsx) */
+.product-details {
+  max-width: 720px;
+  margin: 20px auto;
+  background: #fbfdff;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #e6edf3;
+}
+
+.product-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.product-id {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.back-link {
+  margin-top: 14px;
+  display: inline-block;
+}
+
+.product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+.product-category,
+.product-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.product-category {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.product-availability {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.product-description {
+  color: #334155;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.product-features {
+  list-style: disc inside;
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.product-features li {
+  margin-bottom: 8px;
+}
+
+/* Invalid product fallback styles (ProductDetails.jsx) */
+.product-not-found {
+  text-align: center;
+  padding: 40px 26px;
+}
+
+.notfound-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #3b4257;
+}
+
+.notfound-message {
+  color: #475569;
+  margin-bottom: 22px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+

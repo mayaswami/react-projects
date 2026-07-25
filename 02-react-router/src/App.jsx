@@ -9,6 +9,8 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import Orders from "./pages/Orders";
+import ProductDetails from "./pages/ProductDetails";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="settings" element={<Settings />} />
           <Route path="orders" element={<Orders />} />
         </Route>
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:productId" element={<ProductDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

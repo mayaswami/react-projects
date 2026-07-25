@@ -22,11 +22,11 @@ This project contains my practice while learning React Router.
 - ✅ Sidebar Navigation
 - ✅ Index Route
 - ✅ useNavigate
+- ✅ useParams
+- ✅ Dynamic Routes
 
 ## Topics Remaining
 
-- ⏳ useParams
-- ⏳ Dynamic Routes
 - ⏳ Search Params
 - ⏳ Navigate
 - ⏳ Protected Routes
