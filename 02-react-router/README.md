@@ -21,13 +21,14 @@ This project contains my practice while learning React Router.
 - ✅ Dashboard Layout
 - ✅ Sidebar Navigation
 - ✅ Index Route
+- ✅ useNavigate
 
 ## Topics Remaining
 
-- ⏳ useNavigate
 - ⏳ useParams
 - ⏳ Dynamic Routes
 - ⏳ Search Params
+- ⏳ Navigate
 - ⏳ Protected Routes
 
 ## Tech Stack
