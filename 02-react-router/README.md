@@ -24,12 +24,12 @@ This project contains my practice while learning React Router.
 - ✅ useNavigate
 - ✅ useParams
 - ✅ Dynamic Routes
+- ✅ Navigate
+- ✅ Protected Routes
 
 ## Topics Remaining
 
 - ⏳ Search Params
-- ⏳ Navigate
-- ⏳ Protected Routes
 
 ## Tech Stack
 
