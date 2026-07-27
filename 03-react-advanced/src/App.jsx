@@ -1,4 +1,5 @@
 import UserContext from "./context/UserContext";
+import { useState } from "react";
 
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -12,16 +13,15 @@ import UseRefDemo from "./pages/UseRefDemo";
 
 function App() {
 
-  const user = {
+  const [user, setUser] = useState({
     name: "Maya",
     age: 22,
     city: "Jaipur",
-  };
-  
+  });
   return (
     <>
       <Navbar />
-      <UserContext.Provider value={user}>
+      <UserContext.Provider value={{user, setUser}}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/context-api" element={<ContextDemo />} />
