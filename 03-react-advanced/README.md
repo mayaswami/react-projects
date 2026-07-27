@@ -8,12 +8,13 @@ A React practice project focused on advanced React concepts through separate dem
 - React Router setup
 - Navigation using `NavLink`
 - Separate demo pages for advanced React concepts
+- Context API (`createContext`, `useContext`, `Provider`)
+- Sharing and updating global state with Context API
 
 ## Planned Topics
 
-- Context API
-- useRef
 - Custom Hooks
+- useRef
 - useMemo
 - useCallback
 - React.memo

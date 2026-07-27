@@ -1,23 +1,25 @@
 import { useContext } from "react";
 import UserContext from "../context/UserContext";
+import UserProfile from "../components/UserProfile";
+import UserStatus from "../components/UserStatus";
 
 function ContextDemo() {
-  const { user, setUser } = useContext(UserContext);
+  const { username, isLoggedIn, login, logout } = useContext(UserContext);
 
-  function changeName() {
-    setUser({
-      ...user,
-      name: "Ritu",
-    });
-  }
   return (
-    <div>
-      <h1>Context API Demo</h1>
-      <h2>Name: {user.name}</h2>
-      <h2>Age: {user.age}</h2>
-      <h2>City: {user.city}</h2>
-      <button onClick={changeName}>Change Name</button>
-    </div>
+    <>
+      <UserProfile />
+      <UserStatus />
+      <div>
+        <h1>Context API Demo</h1>
+
+        <h2>Username: {username}</h2>
+        <h2>Status: {isLoggedIn ? "Logged In" : "Logged Out"}</h2>
+
+        <button onClick={login}>Login</button>
+        <button onClick={logout}>Logout</button>
+      </div>
+    </>
   );
 }
 

@@ -1,5 +1,6 @@
 import UserContext from "./context/UserContext";
 import { useState } from "react";
+import { UserProvider } from "./context/UserContext";
 
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -12,7 +13,6 @@ import UseMemoDemo from "./pages/UseMemoDemo";
 import UseRefDemo from "./pages/UseRefDemo";
 
 function App() {
-
   const [user, setUser] = useState({
     name: "Maya",
     age: 22,
@@ -21,17 +21,17 @@ function App() {
   return (
     <>
       <Navbar />
-      <UserContext.Provider value={{user, setUser}}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/context-api" element={<ContextDemo />} />
-        <Route path="/custom-hooks" element={<CustomHooksDemo />} />
-        <Route path="/react-memo" element={<ReactMemoDemo />} />
-        <Route path="/use-callback" element={<UseCallbackDemo />} />
-        <Route path="/use-memo" element={<UseMemoDemo />} />
-        <Route path="/use-ref" element={<UseRefDemo />} />
-      </Routes>
-      </UserContext.Provider>
+      <UserProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/context-api" element={<ContextDemo />} />
+          <Route path="/custom-hooks" element={<CustomHooksDemo />} />
+          <Route path="/react-memo" element={<ReactMemoDemo />} />
+          <Route path="/use-callback" element={<UseCallbackDemo />} />
+          <Route path="/use-memo" element={<UseMemoDemo />} />
+          <Route path="/use-ref" element={<UseRefDemo />} />
+        </Routes>
+      </UserProvider>
     </>
   );
 }
