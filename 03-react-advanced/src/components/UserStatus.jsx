@@ -7,7 +7,6 @@ function UserStatus() {
   return (
     <div>
       <h2>Status</h2>
-
       <h3>{isLoggedIn ? "🟢 Logged In" : "🔴 Logged Out"}</h3>
     </div>
   );

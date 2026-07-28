@@ -1,6 +1,7 @@
 import UserContext from "./context/UserContext";
 import { useState } from "react";
 import { UserProvider } from "./context/UserContext";
+import { ThemeProvider } from "./context/ThemeContext";
 
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -22,15 +23,17 @@ function App() {
     <>
       <Navbar />
       <UserProvider>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/context-api" element={<ContextDemo />} />
-          <Route path="/custom-hooks" element={<CustomHooksDemo />} />
-          <Route path="/react-memo" element={<ReactMemoDemo />} />
-          <Route path="/use-callback" element={<UseCallbackDemo />} />
-          <Route path="/use-memo" element={<UseMemoDemo />} />
-          <Route path="/use-ref" element={<UseRefDemo />} />
-        </Routes>
+        <ThemeProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/context-api" element={<ContextDemo />} />
+            <Route path="/custom-hooks" element={<CustomHooksDemo />} />
+            <Route path="/react-memo" element={<ReactMemoDemo />} />
+            <Route path="/use-callback" element={<UseCallbackDemo />} />
+            <Route path="/use-memo" element={<UseMemoDemo />} />
+            <Route path="/use-ref" element={<UseRefDemo />} />
+          </Routes>
+        </ThemeProvider>
       </UserProvider>
     </>
   );
