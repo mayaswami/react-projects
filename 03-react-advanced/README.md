@@ -9,7 +9,7 @@ A React practice project focused on advanced React concepts through separate dem
 - Navigation using `NavLink`
 - Separate demo pages for advanced React concepts
 
-### Context API
+### 1.Context API
 
 - Understanding Prop Drilling
 - Creating Context with `createContext()`
@@ -21,11 +21,13 @@ A React practice project focused on advanced React concepts through separate dem
 - Working with Multiple Contexts
 - Basic Theme Toggle using `ThemeContext`
 
-### useRef
+### 2.useRef
 - Created refs using `useRef`
 - Understood the `current` property
 - Compared `useRef` with `useState`
 - Learned that updating a ref does not trigger a re-render
+- Accessed DOM elements using refs
+- Implemented input focus, auto-focus and clear input examples
 
 ## Planned Topics
 

@@ -1,0 +1,54 @@
+.use-ref-demo {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  background: #374151c4;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  color: #f9fafb;
+}
+
+.use-ref-demo h1,
+.use-ref-demo h2 {
+  color: #f9fafb;
+}
+
+.demo-section {
+  margin-bottom: 16px;
+  padding: 12px 0;
+  border-top: 1px solid #374151;
+}
+
+.demo-section button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  background: #1f2937;
+  color: #f9fafb;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.demo-section button:hover {
+  background: #374151;
+}
+
+.demo-section input {
+  padding: 8px;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  margin: 10px;
+  width: 220px;
+  background: #1f2937;
+  color: #f9fafb;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.demo-section input:focus {
+  border-color: #8e9aaa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+}
