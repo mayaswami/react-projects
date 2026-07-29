@@ -21,10 +21,15 @@ A React practice project focused on advanced React concepts through separate dem
 - Working with Multiple Contexts
 - Basic Theme Toggle using `ThemeContext`
 
+### useRef
+- Created refs using `useRef`
+- Understood the `current` property
+- Compared `useRef` with `useState`
+- Learned that updating a ref does not trigger a re-render
+
 ## Planned Topics
 
 - Custom Hooks
-- useRef
 - useMemo
 - useCallback
 - React.memo
