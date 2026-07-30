@@ -30,6 +30,7 @@ A React practice project focused on advanced React concepts through separate dem
 - Implemented input focus, auto-focus and clear input examples
 - Tracked render count
 - Stored previous input values using refs
+- Built a stopwatch using `useRef` and `setInterval`
 
 ## Planned Topics
 

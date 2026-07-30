@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "../css/UseRefDemo.css";
+import Stopwatch from "../components/Stopwatch";
 
 function UseRefDemo() {
   // useState vs useRef Demo
@@ -96,6 +97,11 @@ function UseRefDemo() {
         <input type="text" value={text} onChange={handleChange} />{" "}
         <h3>Current : {text}</h3>
         <h3>Previous : {previousText.current}</h3>
+      </section>
+      <hr />
+      <section className="demo-section">
+        {/* Demo 7 */}
+        <Stopwatch />
       </section>
     </div>
   );
