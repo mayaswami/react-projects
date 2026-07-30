@@ -42,6 +42,18 @@ function UseRefDemo() {
     clearInputRef.current.value = "";
   }
 
+  // Render Count
+  const renderCount = useRef(0);
+  renderCount.current++;
+
+  //
+  const [text, setText] = useState("");
+  const previousText = useRef("");
+  function handleChange(e) {
+    previousText.current = text;
+    setText(e.target.value);
+  }
+
   return (
     <div className="use-ref-demo">
       <section className="demo-section">
@@ -72,6 +84,18 @@ function UseRefDemo() {
         <h2>Clear Input Example</h2>
         <input type="text" ref={clearInputRef} placeholder="Enter your name" />
         <button onClick={clearInput}>Clear Input</button>
+      </section>
+      <hr />
+      <section className="demo-section">
+        {/* Demo 5 */}
+        <h2>Render Count: {renderCount.current}</h2>
+      </section>
+      <hr />
+      <section className="demo-section">
+        {/* Demo 6 */}
+        <input type="text" value={text} onChange={handleChange} />{" "}
+        <h3>Current : {text}</h3>
+        <h3>Previous : {previousText.current}</h3>
       </section>
     </div>
   );

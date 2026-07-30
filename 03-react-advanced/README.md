@@ -28,6 +28,8 @@ A React practice project focused on advanced React concepts through separate dem
 - Learned that updating a ref does not trigger a re-render
 - Accessed DOM elements using refs
 - Implemented input focus, auto-focus and clear input examples
+- Tracked render count
+- Stored previous input values using refs
 
 ## Planned Topics
 
