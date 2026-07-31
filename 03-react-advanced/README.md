@@ -32,9 +32,14 @@ A React practice project focused on advanced React concepts through separate dem
 - Stored previous input values using refs
 - Built a stopwatch using `useRef` and `setInterval`
 
+### 3.useMemo
+- Learned memoization and dependency arrays
+- Optimized expensive calculations using `useMemo`
+- Prevented unnecessary recalculations
+- Optimized list filtering with memoization
+
 ## Planned Topics
 
 - Custom Hooks
-- useMemo
 - useCallback
 - React.memo
