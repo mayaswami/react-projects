@@ -22,6 +22,7 @@ A React practice project focused on advanced React concepts through separate dem
 - Basic Theme Toggle using `ThemeContext`
 
 ### 2.useRef
+
 - Created refs using `useRef`
 - Understood the `current` property
 - Compared `useRef` with `useState`
@@ -33,13 +34,26 @@ A React practice project focused on advanced React concepts through separate dem
 - Built a stopwatch using `useRef` and `setInterval`
 
 ### 3.useMemo
+
 - Learned memoization and dependency arrays
 - Optimized expensive calculations using `useMemo`
 - Prevented unnecessary recalculations
 - Optimized list filtering with memoization
 
+### 4. useCallback
+
+- Learned function memoization using `useCallback`
+- Prevented unnecessary function recreation
+- Passed stable function references to child components
+- Improved performance with `React.memo` + `useCallback`
+
+### 5. React.memo
+
+- Learned component memoization using `React.memo`
+- Prevented unnecessary child component re-renders
+- Compared rendering with and without `React.memo`
+- Understood when `React.memo` is useful
+
 ## Planned Topics
 
 - Custom Hooks
-- useCallback
-- React.memo
