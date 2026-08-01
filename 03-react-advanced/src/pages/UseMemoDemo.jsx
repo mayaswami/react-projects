@@ -31,6 +31,40 @@ function UseMemoDemo() {
 
   return (
     <div>
+      <div className="notes">
+        <h2>📘 About useMemo</h2>
+
+        <p>
+          <strong>Definition:</strong> useMemo remembers the result of a
+          calculation so React doesn't perform the same calculation on every
+          render.
+        </p>
+
+        <p>
+          <strong>Why use it?</strong> It improves performance by avoiding
+          unnecessary calculations.
+        </p>
+
+        <p>
+          <strong>When to use it?</strong> Use it for filtering, sorting,
+          searching or any expensive calculation.
+        </p>
+
+        <p>
+          <strong>Key Points:</strong>
+        </p>
+
+        <ul>
+          <li>Returns a memoized value.</li>
+          <li>Uses a dependency array.</li>
+          <li>Runs again only when dependencies change.</li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h2>👇 Live Demo</h2>
+      
       <h1>useMemo Demo</h1>
       <h2>Count: {count}</h2>
       <h2>Number: {number}</h2>

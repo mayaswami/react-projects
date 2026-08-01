@@ -57,6 +57,46 @@ function UseRefDemo() {
 
   return (
     <div className="use-ref-demo">
+      <div className="notes">
+        <h2>📘 About useRef</h2>
+
+        <p>
+          <strong>Definition:</strong> useRef stores a value that stays the same
+          between renders without causing the component to re-render. It can
+          also be used to access DOM elements directly.
+          <br />
+          <strong>OR</strong>
+          <br />  
+          useRef is a React Hook that stores a mutable value without causing a
+          component re-render. It is commonly used to access DOM elements and
+          persist values across renders.
+        </p>
+
+        <p>
+          <strong>Why use it?</strong> It helps store mutable values and
+          interact with DOM elements without affecting the UI.
+        </p>
+
+        <p>
+          <strong>When to use it?</strong> Use it for input focus, timers,
+          previous values, render count and direct DOM access.
+        </p>
+
+        <p>
+          <strong>Key Points:</strong>
+        </p>
+
+        <ul>
+          <li>Does not trigger re-renders.</li>
+          <li>Stores mutable values.</li>
+          <li>Useful for DOM manipulation.</li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h2>👇 Live Demo</h2>
+
       <section className="demo-section">
         {/*  Demo 1  */}
         <h1>useRef Demo</h1>

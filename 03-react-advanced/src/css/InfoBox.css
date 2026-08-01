@@ -1,0 +1,35 @@
+.notes {
+  background: #1f2937;
+  color: #f3f4f6;
+  border-left: 5px solid #3b82f6;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  line-height: 1.7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.notes h2 {
+  margin-top: 0;
+  color: #60a5fa;
+}
+
+.notes p {
+  margin: 0.8rem 0;
+}
+
+.notes ul {
+  margin-top: 0.5rem;
+  padding-left: 20px;
+}
+
+.notes li {
+  margin-bottom: 6px;
+}
+
+.notes code {
+  background: #374151;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
