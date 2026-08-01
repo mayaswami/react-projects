@@ -1,12 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import Child from "../components/Child";
 
-const ChildComponent = React.memo(function Child() {
+const ChildComponent = React.memo(function Child({ name }) {
   console.log("child rendered");
 
-  return <h2>Name: {name}</h2>
-})
+  return <h2>Name: {name}</h2>;
+});
 
 function ReactMemoDemo() {
   const [count, setCount] = useState(0);
