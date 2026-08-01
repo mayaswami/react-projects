@@ -54,6 +54,8 @@ A React practice project focused on advanced React concepts through separate dem
 - Compared rendering with and without `React.memo`
 - Understood when `React.memo` is useful
 
-## Planned Topics
+### 6. Custom Hooks
 
-- Custom Hooks
+- Created the first custom hook using `useState`
+- Built a reusable `useCounter` hook
+- Reused the same logic across multiple counters
