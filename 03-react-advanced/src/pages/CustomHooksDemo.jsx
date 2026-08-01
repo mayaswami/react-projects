@@ -1,9 +1,16 @@
 import useCounter from "../hooks/useCounter";
+import useToggle from "../hooks/useToggle";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 function CustomHooksDemo() {
   const { count, increment, decrement, reset } = useCounter();
   const counter1 = useCounter();
   const counter2 = useCounter(10);
+
+  const { isOn, toggle } = useToggle();
+
+  useDocumentTitle("Custom Hooks Demoo");
+
   return (
     <div>
       <h1>Custom Hooks Demo</h1>
@@ -24,6 +31,15 @@ function CustomHooksDemo() {
       <button onClick={counter2.decrement}>-</button>
 
       <button onClick={counter2.reset}>Reset</button>
+
+      <hr />
+
+      <h2>Toggle Demo</h2>
+
+      <h3>{isOn ? "ON" : "OFF"}</h3>
+
+      <button onClick={toggle}>Toggle</button>
+      
     </div>
   );
 }
