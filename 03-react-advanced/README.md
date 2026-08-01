@@ -61,3 +61,4 @@ A React practice project focused on advanced React concepts through separate dem
 - Reused the same logic across multiple counters
 - Built a reusable `useToggle` hook
 - Created a custom `useDocumentTitle` hook to manage document titles
+- Built a custom `useFetch` hook to fetch data from APIs
