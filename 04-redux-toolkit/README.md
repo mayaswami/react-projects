@@ -11,6 +11,11 @@ This project covers Redux Toolkit from the basics to practical state management 
 - Connected the store to the application using `Provider`
 - Set up the initial Redux project structure
 
+- Connected the counter slice to the Redux store
+- Accessed state using `useSelector`
+- Updated state using `useDispatch`
+- Built a working Redux counter with increment, decrement and reset
+
 ### Planned Topics
 
 - Redux Slice (`createSlice`)
