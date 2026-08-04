@@ -1,12 +1,12 @@
-import CounterDemo from './pages/CounterDemo';
+import ReduxDemo from "./pages/ReduxDemo";
+import "./css/App.css";
 
 function App() {
   return (
     <>
-      <h1>Redux Toolkit</h1>
-      <CounterDemo />
+      <ReduxDemo />
     </>
   );
 }
 
-export default App
+export default App;

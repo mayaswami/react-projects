@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #141821;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 24px auto 12px;
+  max-width: 520px;
+  padding: 0 16px;
+  color: #f8fafc;
+}
