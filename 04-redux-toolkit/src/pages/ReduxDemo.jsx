@@ -2,12 +2,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, reset } from "../features/counter/counterSlice";
 import { changeName } from "../features/user/userSlice";
 import { toggleTheme } from "../features/theme/themeSlice";
+import { useGetUsersQuery } from "../features/api/apiSlice";
 import "../css/ReduxDemo.css";
 
 function ReduxDemo() {
   const count = useSelector((state) => state.counter.value);
   const user = useSelector((state) => state.user);
   const theme = useSelector((state) => state.theme.mode);
+  const { data, isLoading, error } = useGetUsersQuery();
   const dispatch = useDispatch();
 
   return (
@@ -36,6 +38,21 @@ function ReduxDemo() {
       <section>
         <h2>Theme: {theme}</h2>
         <button onClick={() => dispatch(toggleTheme())}>Toggle Theme</button>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Users</h2>
+
+        {isLoading && <p>Loading...</p>}
+        {error && <p>Something went wrong!</p>}
+        {data &&
+          data.map((user) => (
+            <div key={user.id}>
+              <p>{user.name}</p>
+            </div>
+          ))}
       </section>
     </div>
   );
