@@ -34,6 +34,13 @@ This project covers Redux Toolkit from the basics to practical state management 
 - Fetched data using the auto-generated query hook
 - Handled loading, error, and success states
 
+### 6. Payload Actions
+
+- Used `action.payload` to update Redux state dynamically
+- Passed data through dispatched actions
+- Updated user state using input values
+- Learned how payload makes Redux actions reusable
+
 ### Planned Topics
 
 - Redux Slice (`createSlice`) ✅

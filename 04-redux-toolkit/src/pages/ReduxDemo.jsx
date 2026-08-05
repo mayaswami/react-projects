@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, reset } from "../features/counter/counterSlice";
 import { changeName } from "../features/user/userSlice";
@@ -11,6 +12,8 @@ function ReduxDemo() {
   const theme = useSelector((state) => state.theme.mode);
   const { data, isLoading, error } = useGetUsersQuery();
   const dispatch = useDispatch();
+
+  const [name, setName] = useState("");
 
   return (
     <div>
@@ -30,7 +33,15 @@ function ReduxDemo() {
         <p>Age: {user.age}</p>
         <p>City: {user.city}</p>
         <p>Email: {user.email}</p>
-        <button onClick={() => dispatch(changeName())}>Change Name</button>
+        <button onClick={() => dispatch(changeName("Ritu"))}>Change Name</button>
+        <button onClick={() => dispatch(changeName("Maya"))}>Reset Name</button>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Enter new name"
+        />
+        <button onClick={() => dispatch(changeName(name))}>Update Name</button>
       </section>
 
       <hr />
@@ -53,7 +64,7 @@ function ReduxDemo() {
               <p>{user.name}</p>
             </div>
           ))}
-      </section>
+      </section>     
     </div>
   );
 }
